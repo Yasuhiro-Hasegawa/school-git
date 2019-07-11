@@ -4,7 +4,11 @@
 int main(){
   int dice1;
   int dice2;
+  char c[50];
   srand(time(NULL));
+  printf("What is your name?\n> ");
+  scanf("%s",c);
+  printf("Hello, %s!\n",c);
   dice1 = rand() % 6+1;
   dice2 = rand() % 6+1;
   printf("Rolling the dice...\n");
